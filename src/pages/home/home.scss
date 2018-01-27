@@ -1,0 +1,98 @@
+page-home {
+	.bg-clouds {
+		background: #ecf0f1;
+	}
+	.bg-sunflower {
+		background: #f1c40f;
+	}
+	.bg-orange {
+		background: #f39c12;
+	}
+	.bg-carrot {
+		background: #e67e22;
+	}
+	.no-padding {
+    padding: 0;
+	}
+
+	.btn-img {
+		max-height: 90%;
+	}
+	.header-img {
+    max-height: 100px;
+    max-width: 300px;
+	}
+
+	.cd-ads img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.spacer {
+		height: 20px;
+		width: 100%;
+	}
+
+	.ssx.bg-sunflower {
+		margin-top: -20px;
+    padding: 20px 20px 10px 20px;
+	}
+
+	.ssy {
+		background: #ecf0f1;
+		// box-shadow: 
+  //     inset 0px 11px 8px -10px black,
+  //     inset 0px -11px 8px -10px black;
+	}
+
+	.menu {
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	img.menu-img {
+		max-width: 40%;
+    border: 0;
+	}
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+  .fix-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	}
+	.fix-page {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+	}
+
+	.title {
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: -webkit-xx-large;
+	}
+	.subtitle {
+		text-align: center;
+		font-size: 1.3rem;
+	}
+}
+
+

@@ -1,0 +1,64 @@
+<!--
+  Generated template for the Sp2hpformPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="orange">
+    <ion-title>{{ name }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-clouds" padding>
+		<ion-list>
+		  <ion-item>
+		    <ion-label floating>Nama Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ name }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>No. HP Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ phone }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Email Pelapor</ion-label>
+		    <ion-input readonly="true" type="email" value="{{ email }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Umur Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ umur }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Jenis Kelamin Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ gender }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Agama Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ agama }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Pekerjaan Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ job }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Kewarganegaraan Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ kewarganegaraan }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Alamat Pelapor</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ address }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Waktu Kejadian</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ waktu }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Tempat Kejadian Perkara</ion-label>
+		    <ion-input readonly="true" type="text" value="{{ tkp }}"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Isi Laporan</ion-label>
+		    <ion-textarea rows="5" readonly="true" value="{{ laporan }}"></ion-textarea>
+		  </ion-item>
+		</ion-list>
+</ion-content>

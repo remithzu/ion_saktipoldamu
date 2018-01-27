@@ -1,0 +1,43 @@
+<ion-content class="bg-clouds" padding>
+	<div class="box">
+		<div class="header">
+	    <h2 class="title">Buat Akun</h2>
+	    <h6 class="subtitle">Daftarkan diri anda untuk kemudahan berinteraksi.</h6>
+	  </div>
+		<div class="body">
+			<form [formGroup]="signup">
+				<ion-item>
+			    <ion-label floating>Nama Lengkap</ion-label>
+			    <ion-input type="text" [(ngModel)]="nama" formControlName="nama"></ion-input>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label floating>Alamat</ion-label>
+			    <ion-input type="text" [(ngModel)]="alamat" formControlName="alamat"></ion-input>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label floating>Phone</ion-label>
+			    <ion-input type="tel" [(ngModel)]="phonenbr" formControlName="phonenbr"></ion-input>
+			  </ion-item>
+			  <ion-item>
+			    <ion-label floating>Password</ion-label>
+			    <ion-input type="password" [(ngModel)]="password" formControlName="password"></ion-input>
+			  </ion-item>
+			  <br>
+			  <button ion-button block outline type="submit" (click)="register()">Daftar</button>
+			</form>
+		</div>
+		<div class="footer">
+			<a href="https://malut.polri.go.id/sakti-poldamu/register.html">Syarat & Ketentuan</a>
+		</div>
+	</div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p style="text-align: left; padding: 05px;">Punya Akun?</p>
+    <ion-buttons end>
+      <button ion-button icon-right (click)="login()">
+        Login
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

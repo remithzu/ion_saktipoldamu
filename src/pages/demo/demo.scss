@@ -1,0 +1,68 @@
+page-demo {
+	ion-toolbar {
+    top: 0 !important;
+    position: absolute;
+	}
+
+	.scroll-content {
+    margin-bottom: 0 !important;
+	}
+	.bg-clouds {
+		background: #ecf0f1;
+	}
+	.bg-sunflower {
+		background: #f1c40f;
+	}
+	.bg-orange {
+		background: #f39c12;
+	}
+	.bg-carrot {
+		background: #e67e22;
+	}
+
+	.slide-img {
+		max-height: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.fix1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 0 0 0;
+    background: url(../assets/imgs/slide1.png) no-repeat;
+    background-size: 40vh;
+    background-position: center bottom;
+ 	}
+ 	.fix2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 0 0 0;
+    background: url(../assets/imgs/slide2.png) no-repeat;
+    background-size: 40vh;
+    background-position: center bottom;
+ 	}
+ 	.fix3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 0 0 0;
+    background: url(../assets/imgs/slide3.png) no-repeat;
+    background-size: 40vh;
+    background-position: center bottom;
+ 	}
+
+	.fix1 p,
+	.fix2 p,
+	.fix3 p {
+		padding: 0 10px;
+	}
+}

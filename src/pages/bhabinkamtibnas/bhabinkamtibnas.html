@@ -1,0 +1,82 @@
+<!--
+  Generated template for the BhabinkamtibnasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="orange">
+    <ion-title>Bhabinkamtibmas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="bg-clouds">
+	<ion-searchbar [(ngModel)]="searchTerm" (ionInput)="getItems()"></ion-searchbar>
+
+	<ion-list>
+		<ion-item *ngIf="showPolres">
+	    <ion-label>Polres</ion-label>
+    	<ion-select #field_polres (ionChange)="onChangePolres(field_polres.value)">
+				<ion-option *ngFor="let res of polres" value="{{res.polres_id}}">{{res.polres_name}}</ion-option>
+			</ion-select>
+	  </ion-item>
+	  <ion-item *ngIf="showPolsek">
+	    <ion-label>Polsek</ion-label>
+	    <ion-select #field_polsek (ionChange)="onChangePolsek(field_polsek.value)">
+				<ion-option *ngFor="let sek of polsek" value="{{sek.polsek_id}}">{{sek.polsek_name}}</ion-option>
+			</ion-select>
+	  </ion-item>
+	  <ion-item *ngIf="showKecamatan">
+	    <ion-label>Kecamatan</ion-label>
+	    <ion-select #field_kecamatan (ionChange)="onChangeKecamatan(field_kecamatan.value)">
+				<ion-option *ngFor="let kec of kecamatan" value="{{kec.kecamatan_id}}">{{kec.kecamatan_name}}</ion-option>
+			</ion-select>
+	  </ion-item>
+	  <ion-item *ngIf="showDesa">
+	    <ion-label>Desa</ion-label>
+	    <ion-select #field_desa (ionChange)="onChangeDesa(field_desa.value)">
+				<ion-option *ngFor="let des of desa" value="{{des.desa_id}}">{{des.desa_name}}</ion-option>
+			</ion-select>
+	  </ion-item>
+	</ion-list>
+	
+	<div *ngIf="searching" class="spinner-container">
+	  <ion-spinner></ion-spinner>
+	</div>
+
+	
+
+	<ion-list *ngIf="showList">
+	  <ion-item-sliding *ngFor="let post of posts">
+	    <ion-item (click)="call(post.telp)">
+	      <ion-avatar item-start>
+	        <!-- <img *ngIf="post.gambar" [src]="post.gambar" /> -->
+	        <!-- <img src="assets/imgs/7.png" /> -->
+
+	        <div *ngIf="post.gambar; else default">
+	        	<img *ngIf="post.gambar" [src]="post.gambar" />
+	        </div>
+					<!-- <ng-template #img-show><img [src]="post.gambar"/></ng-template> -->
+					<ng-template #default><img src="assets/imgs/7.png" /></ng-template>
+	      </ion-avatar>
+	      <h2>{{post.nama}}</h2>
+	      <p>NRP: {{post.nrp}} <br>Telp: {{post.telp}}</p>
+	    </ion-item>
+	    <ion-item-options side="right">
+	      <button ion-button color="primary" (click)="call(post.telp)"> 
+	        <ion-icon name="ios-call-outline"></ion-icon>
+	        Call
+	      </button>
+	    </ion-item-options>
+	  </ion-item-sliding>
+  </ion-list>
+
+  <ion-list>
+  	<ion-item *ngIf="isEmpty" style="background: white;">
+	    <h2>Tidak Ditemukan</h2>
+	    <p>Data tidak ditemukan</p>
+	  </ion-item>
+  </ion-list>
+</ion-content>

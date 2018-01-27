@@ -1,0 +1,82 @@
+<ion-content class="bg-clouds no-padding">
+  <div>
+    <div class="ssx bg-sunflower">
+      <h2 class="title">SAKTI POLDAMU</h2>
+      <h6 class="subtitle">Sistem Aplikasi Kieraha Teknologi Informasi<br>Polda Maluku Utara</h6>
+      <ion-card class="cd-ads">
+        <img src="assets/imgs/banner.png" class="header-img">
+      </ion-card>
+    </div>
+
+    <div class="ssy">
+      <div class="spacer"></div>
+      <ion-grid class="no-padding">
+        <ion-row>
+          <ion-col col-4>
+            <div class="menu" (click)="peta($event)">
+              <img src="assets/imgs/1.png" class="menu-img"/>
+              <div class="menu-title">Peta</div>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div class="menu" (click)="kantorpolisi($event)">
+              <img src="assets/imgs/2.png" class="menu-img"/>
+              <div class="menu-title">Kantor Polisi</div>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div class="menu" (click)="kontak($event)">
+              <img src="assets/imgs/3.png" class="menu-img"/>
+              <div class="menu-title">Kontak Penting</div>
+            </div>
+          </ion-col>
+
+          <ion-col col-4>
+            <div class="menu" (click)="sp2hp($event)">
+              <img src="assets/imgs/4.png" class="menu-img"/>
+              <div class="menu-title">SP2HP</div>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div class="menu" (click)="bantuan($event)">
+              <img src="assets/imgs/5.png" class="menu-img"/>
+              <div class="menu-title">Bantuan</div>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div class="menu" (click)="layanan($event)">
+              <img src="assets/imgs/6.png" class="menu-img"/>
+              <div class="menu-title">Layanan</div>
+            </div>
+          </ion-col>
+
+          <ion-col col-4>
+            <div class="menu" (click)="bhabinkamtibnas($event)">
+              <img src="assets/imgs/7.png" class="menu-img"/>
+              <div class="menu-title">Bhabinkamtibmas</div>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div class="menu" (click)="berita($event)">
+              <img src="assets/imgs/8.png" class="menu-img"/>
+              <div class="menu-title">Berita</div>
+            </div>
+          </ion-col>
+          <ion-col col-4>
+            <div class="menu" (click)="callCenter('110')">
+              <img src="assets/imgs/9.png" class="menu-img"/>
+              <div class="menu-title">Call Center</div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div style="padding: 0 30px;">
+        <button ion-button color="danger" (click)="panic('110')" large round block>
+          <img src="assets/imgs/10a.png" class="btn-img"/>
+          <div class="menu-title">Panic Button</div>
+        </button>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </div>
+</ion-content>

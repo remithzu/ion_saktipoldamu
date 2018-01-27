@@ -1,0 +1,43 @@
+page-peta {
+	.scroll-content {
+    margin-bottom: 0 !important;
+	}
+	.bg-clouds {
+		background: #ecf0f1;
+	}
+	.bg-sunflower {
+		background: #f1c40f;
+	}
+	.bg-orange {
+		background: #f39c12;
+	}
+	.bg-carrot {
+		background: #e67e22;
+	}
+	#map {
+		position:relative;
+		height: 100%;
+		width: 100%;
+	}
+	.hidden {
+		display: none;
+	}
+	.show {
+		display: block;
+	}
+	.no-padding {
+		padding: 0;
+	}
+	.no-margin {
+		margin: 0;
+	}
+	.inline {
+		display: inline-block;
+	}
+	.left {
+		float: left;
+	}
+	button.right {
+		float: right;
+	}
+}

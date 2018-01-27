@@ -1,0 +1,36 @@
+page-login {
+	.header #over img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	ion-item.item {
+		background: none;
+	}
+	.scroll-content {
+		background: #F09819;
+		background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);
+		background: linear-gradient(to right, #EDDE5D, #F09819);
+	}
+
+	.title {
+		text-align: center;
+		letter-spacing: 2px;
+		font-size: 4rem
+	}
+	.subtitle {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.body {
+    padding: 20px;
+    background: rgba(236, 240, 241,0.5);
+    border-radius: 5px;
+    margin: 30px 0;
+	}
+
+	.body h2 {
+		text-align: center;
+	}
+}

@@ -1,0 +1,71 @@
+<!--
+  Generated template for the Sp2hpformPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="orange">
+    <ion-title>FORM SP2HP</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="save(phone)">
+        Simpan
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-clouds" padding>
+	<form [formGroup]="sp2hpform">
+		<ion-list>
+		  <ion-item>
+		    <ion-label floating>Nama Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_name" formControlName="field_name" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>No. HP Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_phone" formControlName="field_phone" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Email Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_email" formControlName="field_email" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Umur Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_umur" formControlName="field_umur" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Jenis Kelamin Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_gender" formControlName="field_gender" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Agama Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_agama" formControlName="field_agama" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Pekerjaan Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_job" formControlName="field_job" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Kewarganegaraan Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_kewarganegaraan" formControlName="field_kewarganegaraan" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Alamat Pelapor</ion-label>
+		    <ion-input [(ngModel)]="field_address" formControlName="field_address" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Waktu Kejadian</ion-label>
+		    <ion-input [(ngModel)]="field_waktu" formControlName="field_waktu" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Tempat Kejadian Perkara</ion-label>
+		    <ion-input [(ngModel)]="field_tkp" formControlName="field_tkp" type="text"></ion-input>
+		  </ion-item>
+		  <ion-item>
+		    <ion-label floating>Isi Laporan</ion-label>
+		    <ion-textarea rows="5" [(ngModel)]="field_laporan" formControlName="field_laporan"></ion-textarea>
+		  </ion-item>
+		</ion-list>
+	</form>
+</ion-content>
